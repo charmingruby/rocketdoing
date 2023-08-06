@@ -1,3 +1,11 @@
+import { CreateTaskForm } from './components/CreateTaskForm'
+import { Header } from '../../components/Header'
+
 export function Home() {
-  return <div>home</div>
+  return (
+    <div>
+      <Header />
+      <CreateTaskForm />
+    </div>
+  )
 }

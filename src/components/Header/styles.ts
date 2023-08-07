@@ -26,16 +26,16 @@ export const LogoContainer = styled.div`
 
 export const Logo = styled.img``
 
-interface LogoTextProps {
-  firstHalf?: boolean
-}
-
 export const LogoTextContainer = styled.div``
+
+interface LogoTextProps {
+  position: 'begin' | 'end'
+}
 
 export const LogoText = styled.span<LogoTextProps>`
   font-size: 40px;
   font-weight: bold;
 
   color: ${(props) =>
-    props.firstHalf ? props.theme.blue : props.theme['purple-dark']};
+    props.position === 'begin' ? props.theme.blue : props.theme['purple-dark']};
 `

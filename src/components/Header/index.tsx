@@ -9,8 +9,8 @@ export function Header() {
           <S.Logo src={logoImg} alt="Rocketdoing logo" />
 
           <S.LogoTextContainer>
-            <S.LogoText firstHalf>to</S.LogoText>
-            <S.LogoText>do</S.LogoText>
+            <S.LogoText position="begin">to</S.LogoText>
+            <S.LogoText position="end">do</S.LogoText>
           </S.LogoTextContainer>
         </S.LogoContainer>
       </S.Content>
